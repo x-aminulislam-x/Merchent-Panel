@@ -1,0 +1,19 @@
+@import "../../../assets/sass/partials/classes";
+@import "../../../assets/sass/partials/variables";
+@import "../../../assets/sass/partials/mixins";
+
+///////////////////////
+
+// @import "./ProductsForm/ProductsForm.scss";
+// @import "./SaveProducts/ProductsForm.scss";
+
+.add_products {
+  .wx__backbutton {
+    @extend ._h4__medium;
+    margin-bottom: 24.5px;
+  }
+  .form {
+    margin-right: 16px;
+    width: 656px;
+  }
+}

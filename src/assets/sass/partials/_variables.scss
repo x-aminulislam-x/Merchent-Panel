@@ -1,0 +1,153 @@
+// fonts
+
+$primary__font__family: "Inter", sans-serif;
+
+// body codes font
+$secondary__font__family: "IBM Plex Mono", monospace;
+
+// colors
+$color__blue: #0070f4;
+$color__green: #10c600;
+$color__gray: #e5e5e5;
+$color__darkGray: #747b7f;
+$color__light: #ebeef2;
+$color__skyblue: #d4e2f1;
+$color__black: #212529;
+
+// primary color shades
+$primary__100: #eef4ed;
+$primary__200: #d9ecd8;
+$primary__300: #a8d8a4;
+$primary__400: #7cc577;
+$primary__500: #26a11c;
+$primary__600: #0d800a;
+$primary__700: #166b10;
+$primary__800: #0e5909;
+$primary__900: #074403;
+
+// neutral color shades
+$neutral__100: #ffffff;
+$neutral__200: #f5f6f7;
+$neutral__300: #f0f1f2;
+$neutral__400: #dfe2e6;
+$neutral__500: #bbbcbf;
+$neutral__600: #8c8c8c;
+$neutral__700: #595959;
+$neutral__800: #434343;
+$neutral__900: #1f1f1f;
+
+// primary color shades
+$blue__100: #f4f8fe;
+$blue__200: #e1eeff;
+$blue__300: #c5e0ff;
+$blue__400: #66aaf9;
+$blue__500: #0573f5;
+$blue__600: #0065db;
+$blue__700: #0059c2;
+$blue__800: #1d518f;
+$blue__900: #002a5c;
+
+// green color shades
+$green__100: #f6ffed;
+$green__200: #d9f7be;
+$green__300: #b7eb8f;
+$green__400: #95de64;
+$green__500: #73d13d;
+$green__600: #52c41a;
+$green__700: #389e0d;
+$green__800: #237804;
+$green__900: #135200;
+
+// red color shades
+$red__100: #fff1f0;
+$red__200: #ffccc7;
+$red__300: #ffa39e;
+$red__400: #ff7875;
+$red__500: #ff4d4f;
+$red__600: #f5222d;
+$red__700: #cf1322;
+$red__800: #a8071a;
+$red__900: #820014;
+
+// orange color shades
+$orange__100: #fff7e6;
+$orange__200: #ffe7ba;
+$orange__300: #ffd591;
+$orange__400: #ffc069;
+$orange__500: #ffa940;
+$orange__600: #fa8c16;
+$orange__700: #d46b08;
+$orange__800: #ad4e00;
+$orange__900: #873800;
+
+// yellow color shades
+$yellow__100: #feffe6;
+$yellow__200: #ffffb8;
+$yellow__300: #fffb8f;
+$yellow__400: #fff566;
+$yellow__500: #ffec3d;
+$yellow__600: #fadb14;
+$yellow__700: #d4b106;
+$yellow__800: #ad8b00;
+$yellow__900: #876800;
+
+// cyan color shades
+$cyan__100: #e6fffb;
+$cyan__200: #b5f5ec;
+$cyan__300: #87e8de;
+$cyan__400: #5cdbd3;
+$cyan__500: #36cfc9;
+$cyan__600: #13c2c2;
+$cyan__700: #08979c;
+$cyan__800: #006d75;
+$cyan__900: #00474f;
+
+// purple color shades
+$purple__100: #f9f0ff;
+$purple__200: #efdbff;
+$purple__300: #d3adf7;
+$purple__400: #b37feb;
+$purple__500: #9254de;
+$purple__600: #722ed1;
+$purple__700: #531dab;
+$purple__800: #391085;
+$purple__900: #22075e;
+
+// magenta color shades
+$magenta__100: #fff0f6;
+$magenta__200: #ffd6e7;
+$magenta__300: #ffadd2;
+$magenta__400: #ff85c0;
+$magenta__500: #f759ab;
+$magenta__600: #eb2f96;
+$magenta__700: #c41d7f;
+$magenta__800: #9e1068;
+$magenta__900: #780650;
+
+// gold color shades
+$gold__100: #fffbe6;
+$gold__200: #fff1b8;
+$gold__300: #ffe58f;
+$gold__400: #ffd666;
+$gold__500: #ffc53d;
+$gold__600: #faad14;
+$gold__700: #d48806;
+$gold__800: #ad6800;
+$gold__900: #874d00;
+
+
+
+$primary: $primary__600;
+$secondary: $color__darkGray;
+$success: $color__green;
+$info: $color__skyblue;
+$light: $color__light;
+$dark: $color__black;
+
+$header_height: 52px;
+$sidenav_width: 240px;
+$inner_padding: 32px;
+
+// hr
+$hr_background: #E2E2E2;
+$hr_height: 2px;

@@ -1,0 +1,118 @@
+@import "assets/sass/partials/classes";
+@import "assets/sass/partials/variables";
+
+
+.wx__sidebar {
+  margin-top: $header_height;
+  width: $sidenav_width;
+  height: calc(100vh - #{$header_height});
+  background-color: white;
+  border-right: 1px solid $neutral__400;
+  border-top: 1px solid $neutral__400;
+  overflow-y: auto;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wx__sidebar__container {
+  padding: 24px 9px 0 6px;
+  overflow-x: hidden;
+}
+
+.wx__sales__channels {
+  align-self: start;
+  margin: 32px 0 0 18px;
+  padding: 0 0 4px 0;
+  @extend ._caption;
+  color: $neutral__600;
+  border-bottom: 2px solid $primary__100;
+  width: 100%;
+}
+
+.wx__sidebar__bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  border: 1px solid $primary__100;
+  padding: 0 9px 8px 6px;
+}
+
+
+.wx__side__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .active {
+    background: $primary__100;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 3px;
+      width: 4px;
+      height: 18px;
+      background: $primary;
+      left: -6px;
+    }
+  }
+}
+
+.wx__single__side__nav {
+  display: flex;
+  align-items: center;
+  width: 225px;
+  height: 32px;
+  padding: 9.06px 18.33px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  margin: 4px 0px;
+  color: $primary;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  .wx__side__navigation__text {
+    span {
+      @extend ._body__medium;
+      color: $neutral__800;
+    }
+  }
+  .wx__side__navigation__text {
+    margin: 0 0 0 10.33px;
+  }
+  &:hover {
+    background: $neutral__200;
+  }
+  &:active {
+    background: $primary__200;
+  }
+}
+
+.wx__single_side_nav_childrens {
+  // display: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.wx__show_subChildrens {
+  max-height: fit-content;
+  transition: all 0.3s;
+}
+
+.wx__single_side_nav_single_childrens {
+  @extend .wx__single__side__nav;
+  .wx__side__childrens__text {
+    span {
+      @extend ._body__regular;
+      color: $neutral__800;
+      margin: 0 0 0 50px;
+    }
+  }
+}
+

@@ -1,0 +1,42 @@
+@import "../../../../../assets/sass/partials/classes";
+@import "../../../../../assets/sass/partials/variables";
+@import "../../../../../assets/sass/partials/mixins";
+
+.product_pricing {
+  background-color: $neutral__100;
+  width: 100%;
+  height: 263px;
+  margin-top: 16px;
+  padding: 24px;
+  @extend .wx__rounded;
+  .price {
+    margin: 20px 0;
+    border-bottom: 1.5px solid $neutral__400;
+  }
+  .selling_price,
+  .regular_price,
+  .cost_price,
+  .product_sku,
+  .barcode {
+    display: flex;
+    flex-direction: column;
+    width: 189.33px;
+    label {
+      color: $neutral__800;
+      @extend ._sub__semibold;
+      span {
+        color: $red__600;
+      }
+    }
+    input {
+      margin-bottom: 20px;
+    }
+  }
+  .product_sku,
+  .barcode {
+    width: 294px;
+  }
+  .product_sku {
+    margin-right: 20px;
+  }
+}

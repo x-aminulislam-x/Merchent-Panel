@@ -1,0 +1,11 @@
+@import "../../../../assets/sass/partials/classes";
+@import "../../../../assets/sass/partials/variables";
+@import "../../../../assets/sass/partials/mixins";
+
+.wx__products_form {
+  width: 656px;
+  padding: 24px;
+  background: $neutral__100;
+  background-color: cyan;
+  @extend .wx__rounded;
+}

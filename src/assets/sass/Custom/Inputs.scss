@@ -1,0 +1,87 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/classes";
+
+.wx__form_input {
+  margin-bottom: 15px;
+  label {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 30px;
+    color: #2b2b2b;
+  }
+}
+
+.wx__input {
+  @extend ._body__regular;
+}
+
+.wx__input_primary {
+  @include input__style($border_color: $primary__500);
+  //   @include input__style($border: none);
+  @extend .wx__input;
+}
+
+.wx__input_secondary {
+  @include input__style($border_color: $neutral__600);
+  @extend .wx__input;
+}
+
+.wx__input_warning {
+  @include input__style($border_color: $orange__600);
+  @extend .wx__input;
+}
+
+.wx__input_success {
+  @include input__style($border_color: $green__500);
+  @extend .wx__input;
+}
+
+.wx__input_danger {
+  @include input__style($border_color: $red__500);
+  @extend .wx__input;
+}
+
+.wx__input_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin: 8px 0;
+  padding: 10px 12px;
+  @extend .wx__rounded;
+  input {
+    @include input__style(
+      $border: none,
+      $width: 100%,
+      $height: 38px,
+      $margin: 0
+    );
+    color: $neutral__900;
+  }
+  span {
+    color: $neutral__700;
+  }
+}
+
+.wx__input_group_primary {
+  @extend .wx__input_group;
+  @include wx__border($border_color: $primary__500);
+}
+.wx__input_group_secondary {
+  @extend .wx__input_group;
+  @include wx__border($border_color: $neutral__600);
+}
+.wx__input_group_warning {
+  @extend .wx__input_group;
+  @include wx__border($border_color: $orange__600);
+}
+.wx__input_group_success {
+  @extend .wx__input_group;
+  @include wx__border($border_color: $green__500);
+}
+.wx__input_group_danger {
+  @extend .wx__input_group;
+  @include wx__border($border_color: $red__500);
+}

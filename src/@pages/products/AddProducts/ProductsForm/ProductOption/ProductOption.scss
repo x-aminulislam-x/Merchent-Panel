@@ -1,0 +1,73 @@
+@import "../../../../../assets/sass/partials/classes";
+@import "../../../../../assets/sass/partials/variables";
+@import "../../../../../assets/sass/partials/mixins";
+
+.product_option {
+  background: $neutral__100;
+  width: 100%;
+  min-height: 448px;
+  padding: 24px;
+  margin-top: 16px;
+  @extend .wx__rounded;
+  .option_header {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 1rem;
+      color: $neutral__900;
+      margin-left: 13.5px;
+    }
+  }
+  .option_body {
+    .option_switch {
+      margin-top: 38px;
+      margin-bottom: 30px;
+      .form-switch {
+        label {
+          @extend ._body__regular;
+        }
+      }
+      //   display: flex;
+      //   align-items: center;
+      //   width: 385px;
+    }
+    .option_details {
+      border-top: 1px solid $neutral__400;
+      border-bottom: 1px solid $neutral__400;
+      padding-bottom: 20px;
+      .option_details_terms {
+        margin-top: 20px;
+        label {
+          margin-left: 39px;
+          @extend ._sub__semibold;
+        }
+        .option_details_input {
+          span {
+            color: $neutral__600;
+            cursor: pointer;
+          }
+          input {
+            width: 528px;
+          }
+        }
+      }
+      button {
+        margin-top: 20px;
+        margin-left: 39px;
+        padding: 5px 15px;
+      }
+    }
+    .add_another_option {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 39px;
+      color: $blue__500;
+      cursor: pointer;
+      @extend ._sub__semibold;
+      span {
+        margin-right: 15px;
+      }
+    }
+  }
+}

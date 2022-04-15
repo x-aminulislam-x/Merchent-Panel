@@ -1,0 +1,83 @@
+@import "../../../../../assets/sass/partials/classes";
+@import "../../../../../assets/sass/partials/variables";
+@import "../../../../../assets/sass/partials/mixins";
+
+.wx__product_media {
+  background-color: $neutral__100;
+  width: 100%;
+  height: 181px;
+  margin-top: 16px;
+  padding: 24px;
+  @extend .wx__rounded;
+}
+
+.file-area {
+  width: 100%;
+  height: 91px;
+  position: relative;
+  border: 1px dashed $neutral__600;
+  @extend .wx__rounded;
+
+  input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    display: none;
+    opacity: 0;
+  }
+
+  .file-dummy {
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+
+    .success {
+      display: none;
+    }
+  }
+
+  &:hover .file-dummy {
+  }
+
+  // input[type="file"]:focus + .file-dummy {
+  //   outline: 2px solid rgba(255, 255, 255, 0.5);
+  //   outline: -webkit-focus-ring-color auto 5px;
+  // }
+
+  // input[type="file"]:valid + .file-dummy {
+  // border-color: rgba(0, 255, 0, 0.4);
+  // background-color: rgba(0, 255, 0, 0.3);
+
+  .success {
+    display: inline-block;
+  }
+  .default {
+    display: none;
+    .img_icon {
+      color: $neutral__800;
+      margin-right: 7px;
+      font-size: 3rem;
+    }
+    .upload_info {
+      @extend ._body__strong;
+      P {
+        margin: 0;
+        span {
+          color: $blue__500;
+          cursor: pointer;
+          @extend ._body__strong;
+        }
+      }
+      span {
+        text-align: start;
+        color: $neutral__700;
+        @extend .text__small_regular;
+      }
+    }
+  }
+  // }
+}

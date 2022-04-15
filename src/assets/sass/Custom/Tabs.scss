@@ -1,0 +1,40 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/classes";
+
+// tabs is override with bootstrap classes
+.nav-tabs {
+  .nav-item {
+    margin: 0 12px;
+    .nav-link {
+      background: none;
+      border: none !important;
+      border-bottom: 1px solid $neutral__400 !important;
+      color: $neutral__900 !important;
+      padding: 2px 32px 14px 32px !important;
+      &:hover,
+      &:focus {
+        color: $neutral__900;
+        border: none !important;
+        border-color: $primary__500 !important;
+        border-bottom: 2px solid $primary__500 !important;
+        // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+        //   isolation: isolate;
+      }
+
+      &.disabled {
+        color: $neutral__600 !important;
+        background-color: none !important;
+        border-color: $primary__300 !important;
+      }
+    }
+
+    .nav-link.active,
+    .nav-item.show .nav-link {
+      // color: black;
+      background: none !important;
+      border-color: none !important;
+      border-bottom: 2px solid $primary__500 !important;
+    }
+  }
+}

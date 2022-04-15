@@ -1,0 +1,281 @@
+@import "mixins";
+@import "variables";
+
+// border-radius
+
+.wx__rounded {
+  border-radius: 4px;
+}
+
+// fonts class
+.display__1 {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 5rem,
+    $line-height: 110%,
+    $text-transform: none,
+    $letter-spacing: -0.078rem
+  );
+}
+
+.display__2 {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 4.5rem,
+    $line-height: 110%,
+    $letter-spacing: -0.063rem,
+    $text-transform: none
+  );
+}
+
+.display__3 {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 4rem,
+    $line-height: 110%,
+    $letter-spacing: -0.063rem,
+    $text-transform: none
+  );
+}
+
+._h1__semibold {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 2.5rem,
+    $line-height: 125%,
+    $letter-spacing: -0.047rem
+  );
+}
+
+._h2__semibold {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 2rem,
+    $line-height: 120%,
+    $letter-spacing: -0.016rem
+  );
+}
+
+._h3__semibold {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 1.75rem,
+    $line-height: 120%,
+    $letter-spacing: -0.016rem
+  );
+}
+
+._h3__regular {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 1.75rem,
+    $line-height: 120%,
+    $letter-spacing: -0.016rem
+  );
+}
+
+._h4__regular {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 1.5rem,
+    $line-height: 130%,
+    $letter-spacing: -0.016rem
+  );
+}
+
+._h4__medium {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 1.5rem,
+    $line-height: 130%,
+    $letter-spacing: -0.016rem
+  );
+}
+
+._h5__semibold {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 1.25rem,
+    $line-height: 130%,
+    $letter-spacing: -0.016rem
+  );
+}
+
+._h6__semibold {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 1rem,
+    $line-height: 140%,
+    $letter-spacing: -0.031rem
+  );
+}
+
+._h6__medium {
+  @include font__style(
+    $font-weight: 500,
+    $font-size: 1rem,
+    $line-height: 140%,
+    $letter-spacing: -0.031rem
+  );
+}
+
+._h6__regular {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 1rem,
+    $line-height: 140%,
+    $letter-spacing: -0.031rem
+  );
+}
+
+._sub__regular {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 0.813rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+}
+
+._sub__medium {
+  @include font__style(
+    $font-weight: 500,
+    $font-size: 0.813rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+}
+
+._sub__semibold {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 0.875rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+}
+
+._body__regular {
+  @include font__style(
+    $font-size: 0.875rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+}
+
+._body__medium {
+  @include font__style(
+    $font-weight: 500,
+    $font-size: 0.875rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+}
+
+._body__strong {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 0.875rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+}
+
+._body__underline {
+  @include font__style(
+    $font-size: 0.875rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+  text-decoration: underline;
+}
+
+._body__strikethrough {
+  @include font__style(
+    $font-size: 0.875rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+  text-decoration: line-through;
+}
+
+._body__italic {
+  @include font__style(
+    $font-size: 0.875rem,
+    $line-height: 140%,
+    $letter-spacing: -0.009rem
+  );
+  font-style: italic;
+}
+
+._body__code {
+  @include font__style(
+    $font-family: $secondary__font__family,
+    $font-size: 0.875rem,
+    $line-height: 150%,
+    $letter-spacing: -0.047rem
+  );
+}
+
+._footnote__desc {
+  @include font__style(
+    $font-size: 0.75rem,
+    $line-height: 140%,
+    $letter-spacing: -0.01rem
+  );
+}
+
+.text__small_medium {
+  @include font__style(
+    $font-weight: 500,
+    $font-size: 0.75rem,
+    $line-height: 120%
+  );
+}
+.text__small_regular {
+  @include font__style(
+    $font-weight: 400,
+    $font-size: 0.75rem,
+    $line-height: 120%
+  );
+}
+
+._caption {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 0.75rem,
+    $line-height: 140%,
+    $text-transform: uppercase
+  );
+}
+
+._btn__big {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 1rem,
+    $line-height: 150%,
+    $letter-spacing: 0.016rem,
+    $text-transform: capitalize
+  );
+}
+
+._btn__regular {
+  @include font__style(
+    $font-weight: 600,
+    $font-size: 0.875rem,
+    $line-height: 150%,
+    $letter-spacing: 0.015rem,
+    $text-transform: capitalize
+  );
+}
+
+._btn__small {
+  @include font__style(
+    // $font-size: 0.813rem, <== previous one
+    $font-size: 0.813rem,
+    $line-height: 140%,
+    $letter-spacing: 0.013rem,
+    $font-weight: 500,
+    $text-transform: capitalize
+  );
+}

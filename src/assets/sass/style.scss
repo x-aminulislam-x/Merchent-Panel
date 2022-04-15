@@ -1,0 +1,21 @@
+// partials
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/classes";
+
+// custom bootstrap file custom.scss
+
+@import "./Bootstrap/custom.scss";
+
+// buttons class
+
+@import "./Custom/buttons.scss";
+
+// inputs class
+
+@import "./Custom/Inputs.scss";
+
+// overriding bootstrap class
+
+@import "./Bootstrap/Forms/Forms_class.scss";
+@import "./Bootstrap/Popover.scss";

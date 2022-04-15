@@ -1,0 +1,69 @@
+@import "../../../../../assets/sass/partials/classes";
+@import "../../../../../assets/sass/partials/variables";
+@import "../../../../../assets/sass/partials/mixins";
+
+.wx__product_info {
+  width: 656px;
+  height: 581px;
+  padding: 24px;
+  background: $neutral__100;
+  @extend .wx__rounded;
+  .wx__product_name {
+    label {
+      @extend ._sub__semibold;
+      span {
+        color: $red__600;
+      }
+    }
+    .wx__product_sugest {
+      @extend ._sub__regular;
+      .wx__product_sugest_link {
+        color: $neutral__600;
+        margin: 0 12px 0 0;
+      }
+      .wx__product_sugest_edit {
+        display: inline-flex;
+        color: $neutral__900;
+        span {
+          color: $neutral__700;
+          margin-left: 14px;
+          font-size: 1.1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .wx__product_details {
+    margin-top: 14px;
+    label {
+      @extend ._sub__semibold;
+      span {
+        color: $red__600;
+      }
+    }
+    textarea {
+      @include input__style(
+        $width: 100%,
+        $height: 228px,
+        $border_color: $neutral__600
+      );
+      resize: none;
+    }
+  }
+  .wx__product_summary {
+    label {
+      @extend ._sub__semibold;
+      span {
+        color: $red__600;
+      }
+    }
+    textarea {
+      @include input__style(
+        $width: 100%,
+        $height: 121px,
+        $border_color: $neutral__600
+      );
+      resize: none;
+    }
+  }
+}

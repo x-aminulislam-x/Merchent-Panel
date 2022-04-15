@@ -1,0 +1,20 @@
+@import "../../assets/sass/partials/variables";
+
+.wx__header {
+  background: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 11px 24px;
+  height: $header_height;
+  width: 100%;
+  position: fixed;
+  .wx__header__logo {
+    span {
+      margin-left: 6px;
+    }
+  }
+  .wx__header__right__part {
+    .wx__avatar__img {
+      margin: 0 9px 0 0;
+    }
+  }
+}

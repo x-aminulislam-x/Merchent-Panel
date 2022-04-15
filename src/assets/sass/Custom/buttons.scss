@@ -1,0 +1,258 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/classes";
+
+.btn__large {
+  @include buttons();
+  @extend ._btn__big;
+  &:hover {
+    @include buttons($background: $primary__600);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.btn__large__secondary {
+  @include buttons(
+    $background: none,
+    $border: 1px solid $primary__500,
+    $color: $primary__500
+  );
+  @extend ._btn__big;
+  &:hover {
+    @include buttons(
+      $background: $primary__100,
+      $border: 1px solid $primary__500,
+      $color: $primary__500
+    );
+  }
+}
+
+.btn__large__noborder {
+  @include buttons($background: none, $color: $primary__500);
+  @extend ._btn__big;
+  &:hover {
+    @include buttons($background: $primary__100, $color: $primary__500);
+  }
+}
+
+.btn__primary {
+  @include buttons($padding: 9.5px 24px);
+  @extend ._btn__regular;
+  &:hover {
+    @include buttons($padding: 9.5px 24px, $background: $primary__600);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.btn__primary__secondary {
+  @include buttons(
+    $background: none,
+    $border: 1px solid $primary__500,
+    $color: $primary__500,
+    $padding: 9.5px 24px
+  );
+  @extend ._btn__regular;
+  &:hover {
+    @include buttons(
+      $background: $primary__100,
+      $border: 1px solid $primary__500,
+      $color: $primary__500,
+      $padding: 9.5px 24px
+    );
+  }
+}
+
+.btn__primary__noborder {
+  @include buttons(
+    $background: none,
+    $color: $primary__500,
+    $padding: 9.5px 24px
+  );
+  @extend ._btn__regular;
+  &:hover {
+    @include buttons(
+      $background: $primary__100,
+      $color: $primary__500,
+      $padding: 9.5px 24px
+    );
+  }
+}
+
+.btn__small {
+  @include buttons($padding: 7px 12px);
+  @extend ._btn__small;
+  &:hover {
+    @include buttons($padding: 7px 12px, $background: $primary__600);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.btn__small__secondary {
+  @include buttons(
+    $background: none,
+    $border: 1px solid $primary__500,
+    $color: $primary__500,
+    $padding: 7px 12px
+  );
+  @extend ._btn__small;
+  &:hover {
+    @include buttons(
+      $background: $primary__100,
+      $border: 1px solid $primary__500,
+      $color: $primary__500,
+      $padding: 7px 12px
+    );
+  }
+}
+
+.btn__small__noborder {
+  @include buttons(
+    $background: none,
+    $color: $primary__500,
+    $padding: 7px 12px
+  );
+  @extend ._btn__small;
+  &:hover {
+    @include buttons(
+      $background: $primary__100,
+      $color: $primary__500,
+      $padding: 7px 12px
+    );
+  }
+}
+
+// disable buttons classes
+
+.btn__small__disable {
+  cursor: not-allowed;
+  @include buttons(
+    $background: $neutral__500,
+    $color: $neutral__100,
+    $padding: 7px 12px
+  );
+  @extend ._btn__small;
+}
+
+.btn__small__secondary__disable {
+  cursor: not-allowed;
+  @include buttons(
+    $background: none,
+    $border: 1px solid $neutral__500,
+    $color: $neutral__500,
+    $padding: 7px 12px
+  );
+  @extend ._btn__small;
+  // &:hover {
+  //   @include buttons(
+  //     $background: $primary__100,
+  //     $border: 1px solid $primary__500,
+  //     $color: $primary__500,
+  //     $padding: 7px 12px
+  //   );
+  // }
+}
+
+.btn__small__noborder__disable {
+  cursor: not-allowed;
+  @include buttons(
+    $background: none,
+    $color: $neutral__500,
+    $padding: 7px 12px
+  );
+  @extend ._btn__small;
+  // &:hover {
+  //   @include buttons(
+  //     $background: $primary__100,
+  //     $color: $primary__500,
+  //     $padding: 7px 12px
+  //   );
+  // }
+}
+
+// primary disable buttons
+
+.btn__primary__disable {
+  cursor: not-allowed;
+  @include buttons(
+    $background: $neutral__500,
+    $color: $neutral__100,
+    $padding: 9.5px 24px
+  );
+  @extend ._btn__regular;
+  //   &:hover {
+  //     @include buttons($padding: 9.5px 24px, $background: $primary__600);
+  //   }
+}
+
+.btn__primary__secondary__disable {
+  cursor: not-allowed;
+  @include buttons(
+    $background: none,
+    $border: 1px solid $neutral__500,
+    $color: $neutral__500,
+    $padding: 9.5px 24px
+  );
+  @extend ._btn__regular;
+  //   &:hover {
+  //     @include buttons(
+  //       $background: $primary__100,
+  //       $border: 1px solid $primary__500,
+  //       $color: $primary__500,
+  //       $padding: 9.5px 24px
+  //     );
+  //   }
+}
+
+.btn__primary__noborder__disable {
+  cursor: not-allowed;
+  @include buttons(
+    $background: none,
+    $color: $neutral__500,
+    $padding: 9.5px 24px
+  );
+  @extend ._btn__regular;
+  //   &:hover {
+  //     @include buttons(
+  //       $background: $primary__100,
+  //       $color: $primary__500,
+  //       $padding: 9.5px 24px
+  //     );
+  //   }
+}
+
+// large disable buttons
+
+.btn__large__disable {
+  cursor: not-allowed;
+  @include buttons($background: $neutral__500, $color: $neutral__100);
+  @extend ._btn__big;
+  //   &:hover {
+  //     @include buttons($background: $primary__600);
+  //   }
+}
+
+.btn__large__secondary__disable {
+  cursor: not-allowed;
+  @include buttons(
+    $background: none,
+    $border: 1px solid $neutral__500,
+    $color: $neutral__500
+  );
+  @extend ._btn__big;
+  //   &:hover {
+  //     @include buttons(
+  //       $background: $primary__100,
+  //       $border: 1px solid $primary__500,
+  //       $color: $primary__500
+  //     );
+  //   }
+}
+
+.btn__large__noborder__disable {
+  cursor: not-allowed;
+  @include buttons($background: none, $color: $neutral__500);
+  @extend ._btn__big;
+  //   &:hover {
+  //     @include buttons($background: $primary__100, $color: $primary__500);
+  //   }
+}

@@ -1,0 +1,27 @@
+@import "../../../../../assets/sass/partials/classes";
+@import "../../../../../assets/sass/partials/variables";
+@import "../../../../../assets/sass/partials/mixins";
+
+.product_shipping {
+  background: $neutral__100;
+  width: 100%;
+  height: 156px;
+  padding: 24px;
+  margin-top: 16px;
+  @extend .wx__rounded;
+  .shipping {
+    margin-top: 15px;
+    .weight,
+    .width,
+    .height {
+      width: 189.33px;
+      label {
+        color: $neutral__800;
+        @extend ._sub__semibold;
+        span {
+          color: $red__600;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/classes";
+
+.wx__table_cell_text_with_icon {
+  display: flex;
+  align-items: center;
+  width: 266px;
+  min-height: 56px;
+  padding: 18px 8px !important;
+  @extend ._body__regular;
+  color: $neutral__900;
+  .copy_icon {
+    font-size: 1.3rem;
+    color: $neutral__700;
+    margin-left: 11px;
+    cursor: pointer;
+  }
+  &::after {
+    // content: "content_copy";
+    // content: "content_copy";
+    // font-family: Material Icons Round;
+    // font-size: 1.3rem;
+    // color: $neutral__700;
+    // margin-left: 11px;
+    // cursor: pointer;
+  }
+}
+
+.wx__table_cell_focus_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 266px;
+  min-height: 55px;
+  color: $neutral__900;
+  padding: 18px 8px !important;
+  @extend ._body__strong;
+}
+
+.wx__table_cell_focus_text_with_sub {
+  @extend .wx__table_cell_focus_text;
+  .table_subtext {
+    @extend .text__small_regular;
+    color: $neutral__700;
+  }
+}
+
+.wx__table_cell_focus_text_with_tags {
+  @extend .wx__table_cell_focus_text;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.wx__table_cell_link_with_subs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 266px;
+  min-height: 72px;
+  padding: 8px;
+  a {
+    text-decoration: none;
+    color: $primary__600;
+    @extend ._body__strong;
+    &:hover {
+      color: $primary__600;
+    }
+  }
+  .table_subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @extend .text__small_regular;
+    color: $neutral__700;
+    span {
+      margin: 4px 0;
+    }
+  }
+}

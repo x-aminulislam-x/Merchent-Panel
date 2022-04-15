@@ -1,0 +1,10 @@
+@import "assets/sass/partials/variables";
+
+.wx__app_wrapper {
+  padding-top: $header_height;
+  padding-left: $sidenav_width;
+}
+
+.wx__app_inner {
+  padding: $inner_padding;
+}

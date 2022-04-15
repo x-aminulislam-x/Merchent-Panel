@@ -1,0 +1,21 @@
+@import "../../../../../assets/sass/partials/classes";
+@import "../../../../../assets/sass/partials/variables";
+@import "../../../../../assets/sass/partials/mixins";
+
+.product_variants {
+  background: $neutral__100;
+  width: 100%;
+  min-height: 343px;
+  padding: 24px;
+  margin-top: 16px;
+  @extend .wx__rounded;
+  .variants_header {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 1rem;
+      color: $neutral__900;
+      margin-left: 13.5px;
+    }
+  }
+}

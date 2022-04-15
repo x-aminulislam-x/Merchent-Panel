@@ -1,0 +1,49 @@
+@import "../partials/mixins";
+@import "../partials/variables";
+@import "../partials/classes";
+
+.wx__btn_tags {
+  min-width: 57px;
+  min-height: 25px;
+  color: $neutral__900;
+  padding: 4px 8px;
+  border: none;
+  background-color: $neutral__300;
+  @extend .text__small_medium;
+  @extend .wx__rounded;
+}
+
+.wx__btn_tags_warning {
+  @extend .wx__btn_tags;
+  background-color: $yellow__400;
+}
+
+.wx__btn_tags_primary {
+  @extend .wx__btn_tags;
+  background-color: $blue__300;
+}
+
+.wx__btn_tags_secondary {
+  @extend .wx__btn_tags;
+  color: $neutral__100;
+  background-color: $neutral__700;
+}
+
+.wx__btn_tags_success {
+  @extend .wx__btn_tags;
+  background-color: $green__300;
+}
+
+.wx__btn_tags_info {
+  @extend .wx__btn_tags;
+  background-color: $cyan__200;
+}
+
+.wx__btn_tags_danger {
+  @extend .wx__btn_tags;
+  background-color: $red__300;
+}
+
+.fixed_tags {
+  width: 84px;
+}
